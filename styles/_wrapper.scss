@@ -1,0 +1,10 @@
+// Wrapper
+
+.wrapper {
+    background-color: rgba(rgb(0, 0, 0), 0.2);
+    margin: 0 2rem;
+
+    @include mq($desktopWide){
+        margin: 0 10%;
+    }
+}

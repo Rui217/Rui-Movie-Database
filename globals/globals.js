@@ -1,0 +1,4 @@
+// Global Variables
+export const API_KEY = '1a2903be1ec68903bb3a7535b9c72fc1';
+export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYTI5MDNiZTFlYzY4OTAzYmIzYTc1MzViOWM3MmZjMSIsInN1YiI6IjYxM2VjOTRmMDA2YjAxMDA0NDcxY2JhNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.q4xEI2-oLqmNKpRL_eK7annEWNwcOhtsPFG0JjWKPMo';
+export const APP_FOLDER_NAME = 'rui-movie'

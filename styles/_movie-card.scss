@@ -1,0 +1,98 @@
+// Movie Card
+
+.movie-card {
+    margin-bottom: em(16);
+    background-color: $box-color;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    @include mq($tablet){
+        margin-bottom: 0;
+    }
+
+    .movie-hover {
+        position: relative;
+
+        .movie-description {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+            color: $transparent;
+
+            p {
+                margin: 0;
+                line-height: 1.5;
+                color: $transparent;
+            }
+        }
+
+        .movie-description:hover,
+        .movie-description:active {
+            transition: .5s;
+            background-color: #101010ee;
+
+            p {
+                color: $textColor;
+            }
+        }
+    }
+
+    .movie-info {
+        padding: 1rem;
+        position: relative;
+
+        a.title-link {
+            text-decoration: none;
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    
+        a.title-link:hover {
+            text-decoration: underline;
+        }
+    
+        a.more-info {
+            text-decoration: none;
+            border: 1px solid $textColor;
+            padding: .3rem 1rem;
+        }
+
+        a.more-info:hover {
+            text-decoration: underline;
+        }
+
+        .rating {
+            background-color: $rating-color;
+            border: 1px solid $textColor;
+            border-radius: 5rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+
+        .date-and-rating,
+        .info-and-heart {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .date-and-rating {
+            p {
+                margin-bottom: .5rem;
+                font-size: 1.25rem;
+            }
+        }
+
+        .info-and-heart {
+            bottom: 0;
+        }
+    }
+}
+

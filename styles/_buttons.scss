@@ -1,0 +1,19 @@
+// Buttons (hearts)
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    background-color: #00000000;
+    color: red;
+    border: none;
+    margin: 0;
+    padding-right: .5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+button p {
+    margin: 0;
+    line-height: 1rem;
+    text-align: center;
+}

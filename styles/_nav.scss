@@ -1,0 +1,75 @@
+// Nav
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+    li {
+        flex: 1;
+        margin-right: em(4);
+        &:last-child {
+            margin-right: 0;
+        }
+    } 
+    a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+.nav-main {
+
+    a {
+        font-size: 1.3rem;
+        color: $textColor;
+        line-height: em(40);
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    @include mq($tablet){
+        a {
+            padding: 0 em(20);
+        }
+    }
+}
+
+.nav-sort {
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    ul {
+        flex-direction: column;
+        li {
+            a {
+                line-height: 2.5rem;
+                color: $unfocused-color;
+
+                &:focus {
+                    text-decoration: underline;
+                    color: $textColor;
+                }
+
+                &:hover,
+                &:active {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+
+    @include mq($tablet){
+        ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
